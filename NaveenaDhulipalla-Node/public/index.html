@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <div class="menu" id="navMenu">
+                    <a href="#home">Home</a>                
+                    <a href="#aboutme">About Me</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#blogs">Blogs</a>
+                    <a href="#contactme">Contact Me</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="aboutme">
+                <table class="aboutme">
+                    <tr>
+                        <td rowspan="2">
+                            <img src="./image/Home-image.png" alt="My Logo">
+                        </td>
+                        <td>
+                            <h1 class="header-margin">About Me</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="education">
+                <h1>Education</h1>
+                <div class="education-title">Heading</div>
+                <div class="education-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h1>Skills</h1>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </section>
+
+            <section id="experience">
+                <div class="experience-title">Heading</div>
+                <h1>Experience</h1>
+                <div class="experience-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </section>
+
+            <section id="projects" class="project-container">
+                <div class="projects-title">Projects</div>
+                <table class="project">
+                    <tr>
+                        <td class="project-section1">
+                            <img src="./image/Project1.jpg" alt="Project Pictures" class="project-img">
+                            <h1 class="project-heading">Heading</h1>
+                            <div class="project-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </td>
+                        <td class="project-line"></td>
+                        <td class="project-section2">
+                            <img src="./image/Project3.jpg" alt="Project Pictures" class="project-img">
+                            <h1 class="project-heading">Heading</h1>
+                            <div class="project-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="blogs" class="blogs-container">
+                <div class="blogs-title">Blogs</div>
+                <table class="blog">
+                    <tr>
+                        <td class="blog-section1">
+                            <img src="./image/Project1.jpg" alt="Blog Pictures" class="blog-img">
+                            <h1 class="blog-heading">Heading</h1>
+                            <div class="blog-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </td>
+                        <td class="blog-line"></td>
+                        <td class="blog-section2">
+                            <img src="./image/Project3.jpg" alt="Blog Pictures" class="blog-img">
+                            <h1 class="blog-heading">Heading</h1>
+                            <div class="blog-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="contactme">
+                <h1>Contact Me</h1>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <a href="mailto:a@gmail.com">
+                    <img class="icons" src="./image/mail.png" alt="Email">
+                </a>
+                <a href="tel:12">
+                    <img class="icons" src="./image/phone.png" alt="Phone">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img class="icons" src="./image/facebook1.png" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img class="icons" src="./image/linkedin1.png" alt="LinkedIn">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
