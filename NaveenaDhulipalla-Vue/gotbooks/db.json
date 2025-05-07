@@ -1,0 +1,70 @@
+{
+  "mobile": [
+    {
+      "id": 1,
+      "Name": "iPhone 14 Pro Max",
+      "Company": "APPLE",
+      "Release_Year": "2022",
+      "Price": "1299 $",
+      "Rating": "8.5/10",
+      "Positive": "Always-On Display Feature",
+      "Negative": "Lacks Fast Charging Support",
+      "Reviews": "If you're using an older iPhone like the X or 11, upgrading to the iPhone 14 Pro Max could be a smart move for Apple fans."
+    },
+    {
+      "id": 2,
+      "Name": "Galaxy S22 ULTRA",
+      "Company": "SAMSUNG",
+      "Release_Year": "2022",
+      "Price": "1199 $",
+      "Rating": "7.8/10",
+      "Positive": "AI-Powered Camera",
+      "Negative": "Missing Micro SD Slot",
+      "Reviews": "The Galaxy S22 Ultra impresses with a built-in S Pen, vivid display, and notable camera improvements wrapped in a sleek design."
+    },
+    {
+      "id": 3,
+      "Name": "Pixel 7 PRO",
+      "Company": "GOOGLE",
+      "Release_Year": "2022",
+      "Price": "949 $",
+      "Rating": "6.5/10",
+      "Positive": "Excellent Camera Quality",
+      "Negative": "No Fast Charging Feature",
+      "Reviews": "Google's Pixel 7 Pro is more compact compared to other Pro models and delivers a premium photography experience."
+    },
+    {
+      "id": 4,
+      "Name": "10 Pro",
+      "Company": "ONE PLUS",
+      "Release_Year": "2022",
+      "Price": "649 $",
+      "Rating": "6.1/10",
+      "Positive": "Smooth Display Performance",
+      "Negative": "Weak Battery Backup",
+      "Reviews": "A decent option, but OnePlus still needs refinements to boost its competitiveness in the flagship market."
+    },
+    {
+      "id": 5,
+      "Name": "12 Pro 5G",
+      "Company": "XIAOMI",
+      "Release_Year": "2022",
+      "Price": "559 $",
+      "Rating": "6.1/10",
+      "Positive": "AMOLED Display with Snapdragon 8G Chipset",
+      "Negative": "Limited Internal Storage",
+      "Reviews": "Xiaomi Mi 12 Pro promises solid performance over time with its advanced hardware and display quality."
+    },
+    {
+      "id": 6,
+      "Name": "Find X5 PRO",
+      "Company": "OPPO",
+      "Release_Year": "2022",
+      "Price": "769 $",
+      "Rating": "6.0/10",
+      "Positive": "Impressive Battery Life",
+      "Negative": "Relatively Expensive",
+      "Reviews": "OPPO's Find X5 Pro has earned a strong DxOMark score, outperforming its standard Find X5 counterpart in many areas."
+    }
+  ]
+}
