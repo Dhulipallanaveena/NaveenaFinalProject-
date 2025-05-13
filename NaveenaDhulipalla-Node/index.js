@@ -38,13 +38,63 @@ const server = http.createServer((req, res) => {
     }
     else if (req.url === '/api') {
 
+      res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-         fs.readFile( path.join(__dirname,'public', 'db.json'),'utf-8', (err,data)=>{
-            if (err) throw err;
-            // console.log(typeof(data));
+        // Handle preflight OPTIONS request
+        if (req.method === 'OPTIONS') {
+            res.writeHead(204);
+            res.end();
+            return;
+        }
+
+                //https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb-how-to-get-connected-to-your-database 
+        const {MongoClient} = require('mongodb');
+        async function main(){
+            /**
+             * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
+             * See https://docs.mongodb.com/ecosystem/drivers/node/ for more details
+             */
+            const uri = "mongodb+srv://naveena:12345@cluster0.ag2brjx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+        
+
+            const client = new MongoClient(uri);
+        
+            try {
+                // Connect to the MongoDB cluster
+                await client.connect();
+        
+                // Make the appropriate DB calls
+                //await  listDatabases(client);
+                await findsomedata(client);
+        
+            } catch (e) {
+                console.error(e);
+            } finally {
+                await client.close();
+            }
+        }
+
+        main().catch(console.error);
+        async function findsomedata(client ){
+            const cursor = client.db("Animes").collection("phones").find({});
+            const results = await cursor.toArray();
+            //console.log(results);
+            const js= (JSON.stringify(results));
+            console.log(js);
             res.writeHead(200, {'Content-Type': 'application/json'});
-            res.end(data);
-         })
+            res.end(js);
+        };
+
+
+
+        //  fs.readFile( path.join(__dirname,'public', 'db.json'),'utf-8', (err,data)=>{
+        //     if (err) throw err;
+        //     // console.log(typeof(data));
+        //     res.writeHead(200, {'Content-Type': 'application/json'});
+        //     res.end(data);
+        //  })
         
     }
     else if (req.url.startsWith('/image/')) {
